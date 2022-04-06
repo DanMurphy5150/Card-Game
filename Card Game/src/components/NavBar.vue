@@ -4,6 +4,9 @@
       <div class="title">
         <h1>Test your Memory!!!</h1>
       </div>
+      <div class="instructions">
+        <p>Instructions: Where will this sentence be displayed?</p>
+      </div>
       <div class="scores">
         <ul>
           <li>Score:</li>
@@ -26,6 +29,7 @@ nav {
   padding-left: 5%;
   padding-right: 5%;
   justify-content: space-between;
+  box-shadow: 0 5px 8px rgba(3, 44, 71, 0.588);
 }
 
 h1 {
@@ -46,12 +50,22 @@ li {
   display: inline-block;
 }
 
+p {
+  font-size: 25px;
+}
+
 .title {
   margin: 0;
   padding: 0;
   height: 100%;
   display: flex;
   justify-content: left;
+  align-items: center;
+}
+
+.instructions {
+  display: flex;
+
   align-items: center;
 }
 </style>
