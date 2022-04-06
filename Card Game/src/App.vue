@@ -1,12 +1,12 @@
 <template>
   <h1>Hello Worlds</h1>
-  <game-card></game-card>
+  <game-board></game-board>
 </template>
 
 <script>
-import GameCard from './components/GameCard.vue';
+import GameBoard from './components/GameBoard.vue';
 
 export default {
-  components: { GameCard },
+  components: { GameBoard },
 };
 </script>

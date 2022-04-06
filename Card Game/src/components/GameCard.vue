@@ -1,25 +1,15 @@
 <template>
-  <button @click="readData">Click Me for data</button>
-  <ul>
-    <li v-for="data in cardData" :key="data.id">
-      <img v-bind:src="'/src/assets/images/cats/' + data.img" />
-    </li>
-  </ul>
+  <div>
+    <slot></slot>
+  </div>
 </template>
 
-<script>
-import CardThemes from '../data/cardThemes.json';
-
-export default {
-  data() {
-    return {
-      cardData: CardThemes,
-    };
-  },
-  methods: {
-    readData() {
-      console.log(this.CardThemes);
-    },
-  },
-};
-</script>
+<style scoped>
+div {
+  margin: 2rem auto;
+  max-width: 10rem;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(4, 75, 119, 0.26);
+}
+</style>
