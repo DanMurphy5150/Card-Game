@@ -1,12 +1,18 @@
 <template>
-  <h1>Hello Worlds</h1>
+  <nav-bar></nav-bar>
   <game-board></game-board>
 </template>
 
 <script>
 import GameBoard from './components/GameBoard.vue';
+import NavBar from './components/NavBar.vue';
 
 export default {
-  components: { GameBoard },
+  components: { GameBoard, NavBar },
 };
 </script>
+<style scoped>
+body {
+  margin: 0;
+}
+</style>

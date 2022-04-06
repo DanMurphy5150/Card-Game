@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 img {
-  margin: 1rem auto;
+  margin: auto;
   width: 99%;
   height: 100%;
   border-radius: 12px;
