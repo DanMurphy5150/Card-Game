@@ -1,23 +1,17 @@
 <template>
   <div class="game-board">
-    <game-card v-for="data in cardData" :key="data.id">
-      <img v-bind:src="'/src/assets/images/cats/' + data.img" />
+    <game-card v-for="data in selectedThemeData[0]" :key="data.id">
+      <img v-bind:src="data.img" />
     </game-card>
   </div>
 </template>
 
 <script>
-import CardThemes from '../data/cardThemes.json';
 import GameCard from './GameCard.vue';
 
 export default {
   components: { GameCard },
-  data() {
-    return {
-      cardData: CardThemes,
-    };
-  },
-  methods: {},
+  props: ['selectedThemeData'],
 };
 </script>
 

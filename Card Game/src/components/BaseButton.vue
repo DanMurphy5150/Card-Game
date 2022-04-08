@@ -1,8 +1,14 @@
 <template>
   <button>
-    <slot></slot>
+    <slot>{{ buttonText }}</slot>
   </button>
 </template>
+
+<script>
+export default {
+  props: ['buttonText'],
+};
+</script>
 
 <style scoped>
 button {

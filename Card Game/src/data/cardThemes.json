@@ -1,52 +1,140 @@
 [
   {
-    "theme": "cats",
-    "id": "1",
-    "img": "pexels-alex-andrews-821736.jpg"
+    "id": 0,
+    "name": "Digital Art",
+    "data": [
+      {
+        "id": 1,
+        "img": "https://images.pexels.com/photos/11177794/pexels-photo-11177794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 2,
+        "img": "https://images.pexels.com/photos/8979404/pexels-photo-8979404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 3,
+        "img": "https://images.pexels.com/photos/8659276/pexels-photo-8659276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 4,
+        "img": "https://images.pexels.com/photos/11280353/pexels-photo-11280353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 5,
+        "img": "https://images.pexels.com/photos/4585185/pexels-photo-4585185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 6,
+        "img": "https://images.pexels.com/photos/4021521/pexels-photo-4021521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 7,
+        "img": "https://images.pexels.com/photos/1998479/pexels-photo-1998479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 8,
+        "img": "https://images.pexels.com/photos/2832382/pexels-photo-2832382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 9,
+        "img": "https://images.pexels.com/photos/2860807/pexels-photo-2860807.jpeg"
+      },
+      {
+        "id": 10,
+        "img": "https://images.pexels.com/photos/4175054/pexels-photo-4175054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      }
+    ]
   },
   {
-    "theme": "cats",
-    "id": "2",
-    "img": "pexels-janko-ferlic-590490.jpg"
+    "id": 1,
+    "name": "Space",
+    "data": [
+      {
+        "id": 1,
+        "img": "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 2,
+        "img": "https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 3,
+        "img": "https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 4,
+        "img": "https://images.pexels.com/photos/3805983/pexels-photo-3805983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 5,
+        "img": "https://images.pexels.com/photos/6498990/pexels-photo-6498990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 6,
+        "img": "https://images.pexels.com/photos/6444367/pexels-photo-6444367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 7,
+        "img": "https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 8,
+        "img": "https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 9,
+        "img": "https://images.pexels.com/photos/1329917/pexels-photo-1329917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 10,
+        "img": "https://images.pexels.com/photos/2832084/pexels-photo-2832084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      }
+    ]
   },
   {
-    "theme": "cats",
-    "id": "3",
-    "img": "pexels-kelvin-valerio-617278.jpg"
-  },
-  {
-    "theme": "cats",
-    "id": "4",
-    "img": "pexels-leonardo-de-oliveira-1770918.jpg"
-  },
-  {
-    "theme": "cats",
-    "id": "5",
-    "img": "pexels-marko-blazevic-774731.jpg"
-  },
-  {
-    "theme": "cats",
-    "id": "6",
-    "img": "pexels-mermek-am-1573324.jpg"
-  },
-  {
-    "theme": "cats",
-    "id": "7",
-    "img": "pexels-pixabay-236606.jpg"
-  },
-  {
-    "theme": "cats",
-    "id": "8",
-    "img": "pexels-snapwire-730896.jpg"
-  },
-  {
-    "theme": "cats",
-    "id": "9",
-    "img": "pexels-tomas-ryant-2643812.jpg"
-  },
-  {
-    "theme": "cats",
-    "id": "10",
-    "img": "pexels-наталья-семенкова-991831.jpg"
+    "id": 2,
+    "name": "Clouds",
+    "data": [
+      {
+        "id": 1,
+        "img": "https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 2,
+        "img": "https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 3,
+        "img": "https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 4,
+        "img": "https://images.pexels.com/photos/158163/clouds-cloudporn-weather-lookup-158163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 5,
+        "img": "https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 6,
+        "img": "https://images.pexels.com/photos/417045/pexels-photo-417045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 7,
+        "img": "https://images.pexels.com/photos/258149/pexels-photo-258149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 8,
+        "img": "https://images.pexels.com/photos/55787/pexels-photo-55787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 9,
+        "img": "https://images.pexels.com/photos/133953/pexels-photo-133953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      },
+      {
+        "id": 10,
+        "img": "https://images.pexels.com/photos/1287142/pexels-photo-1287142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      }
+    ]
   }
 ]
