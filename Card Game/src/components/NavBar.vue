@@ -5,17 +5,23 @@
         <h1>Test your Memory!!!</h1>
       </div>
       <div class="instructions">
-        <p>Instructions: Where will this sentence be displayed?</p>
+        <p>Instructions: {{ instructions }}</p>
       </div>
       <div class="scores">
         <ul>
-          <li>Score:</li>
-          <li>Highest Score:</li>
+          <li>Score: {{ score }}</li>
+          <li>Highest Score: {{ highScore }}</li>
         </ul>
       </div>
     </nav>
   </header>
 </template>
+
+<script>
+export default {
+  props: ['instructions', 'score', 'highScore'],
+};
+</script>
 
 <style scoped>
 header {
