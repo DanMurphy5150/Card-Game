@@ -1,6 +1,6 @@
 <template>
   <nav-bar
-    :score="currentScore"
+    :score="score"
     :highScore="highestScore"
     :instructions="gameInstructions"
   ></nav-bar>
@@ -20,6 +20,7 @@
   <game-board
     v-if="gameStarted"
     :selectedThemeData="selectedThemeData"
+    @game-start="gameStart"
   ></game-board>
 </template>
 
@@ -36,10 +37,11 @@ export default {
       gameStarted: false,
       gameInstructions:
         'Click a button below to select a memory card game theme...',
-      currentScore: 0,
+      score: 0,
       highestScore: 0,
       cardThemes: CardThemes,
       selectedThemeData: [],
+      clickedCards: [],
     };
   },
   methods: {
@@ -49,11 +51,42 @@ export default {
       this.gameInstructions =
         'Click the cards below, but be careful not to click the same card twice...';
     },
+    shuffleCards() {
+      this.selectedThemeData[0].sort(function () {
+        return 0.5 - Math.random();
+      });
+      console.log('shuffle');
+    },
+    gameStart(cardId) {
+      if (this.clickedCards.indexOf(cardId) !== -1) {
+        this.gameInstructions =
+          'Sorry you have already selected that card...Try again?';
+        this.clickedCards = [];
+        this.score = 0;
+      } else if (this.clickedCards.length < 9) {
+        this.clickedCards.push(cardId);
+        this.score++;
+        this.gameInstructions = 'Nice Selection!! Keep going!!';
 
+        this.checkHighScore();
+        this.shuffleCards();
+      } else {
+        this.gameInstructions =
+          'Winner, Winner, Chicken Dinner! Wanna try agian? Try a different theme...';
+        this.highestScore = 10;
+        this.score = 0;
+      }
+    },
+    checkHighScore() {
+      if (this.score > this.highestScore) {
+        this.highestScore = this.score;
+      }
+    },
     resetGameBoard() {
-      this.currentScore = 0;
+      this.score = 0;
       this.gameStarted = false;
       this.selectedThemeData = [];
+      this.clickedCards = [];
       this.gameInstructions =
         'Click a button below to select a memory card game theme...';
     },
