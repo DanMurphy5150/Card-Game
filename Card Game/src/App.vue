@@ -1,15 +1,22 @@
 <template>
   <nav-bar
-    :instructions="gameInstructions"
     :score="currentScore"
     :highScore="highestScore"
+    :instructions="gameInstructions"
   ></nav-bar>
-  <base-button
-    v-for="data in cardThemes"
-    :key="data.id"
-    :buttonText="data.name"
-    @click="chooseTheme(data.id)"
-  ></base-button>
+  <div v-if="!gameStarted">
+    <base-button
+      v-for="data in cardThemes"
+      :key="data.id"
+      :buttonText="data.name"
+      @click="chooseTheme(data.id)"
+    ></base-button>
+  </div>
+  <div>
+    <base-button v-if="gameStarted" @click="resetGameBoard"
+      >Choose a Different Theme?</base-button
+    >
+  </div>
   <game-board
     v-if="gameStarted"
     :selectedThemeData="selectedThemeData"
@@ -39,6 +46,16 @@ export default {
     chooseTheme(themeId) {
       this.selectedThemeData.push(this.cardThemes[themeId].data);
       this.gameStarted = !this.gameStarted;
+      this.gameInstructions =
+        'Click the cards below, but be careful not to click the same card twice...';
+    },
+
+    resetGameBoard() {
+      this.currentScore = 0;
+      this.gameStarted = false;
+      this.selectedThemeData = [];
+      this.gameInstructions =
+        'Click a button below to select a memory card game theme...';
     },
   },
 };

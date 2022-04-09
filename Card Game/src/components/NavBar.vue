@@ -5,7 +5,7 @@
         <h1>Test your Memory!!!</h1>
       </div>
       <div class="instructions">
-        <p>Instructions: {{ instructions }}</p>
+        <p><b>Instructions:</b> {{ instructions }}</p>
       </div>
       <div class="scores">
         <ul>
