@@ -12,6 +12,7 @@ div {
   padding: 1rem;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 3px 8px rgba(4, 75, 119, 0.26);
+  background-color: rgb(6, 18, 11);
+  box-shadow: 0 3px 8px rgba(17, 51, 72, 0.905);
 }
 </style>

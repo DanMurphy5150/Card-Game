@@ -4,7 +4,7 @@
     :highScore="highestScore"
     :instructions="gameInstructions"
   ></nav-bar>
-  <div v-if="!gameStarted">
+  <div class="button-bar" v-if="!gameStarted">
     <base-button
       v-for="data in cardThemes"
       :key="data.id"
@@ -12,7 +12,7 @@
       @click="chooseTheme(data.id)"
     ></base-button>
   </div>
-  <div>
+  <div class="button-bar">
     <base-button v-if="gameStarted" @click="resetGameBoard"
       >Choose a Different Theme?</base-button
     >
@@ -93,8 +93,17 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
 body {
   margin: 0;
+  background-color: rgb(181, 209, 248);
+}
+
+.button-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  padding: 8px;
 }
 </style>

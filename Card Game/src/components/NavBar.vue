@@ -2,7 +2,7 @@
   <header>
     <nav>
       <div class="title">
-        <h1>Test your Memory!!!</h1>
+        <h1>Memory Game!!!</h1>
       </div>
       <div class="instructions">
         <p><b>Instructions:</b> {{ instructions }}</p>
@@ -32,8 +32,7 @@ header {
 nav {
   height: 100%;
   display: flex;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 3%;
   justify-content: space-between;
   box-shadow: 0 5px 8px rgba(3, 44, 71, 0.588);
 }
@@ -48,19 +47,21 @@ ul {
   margin: 0;
   padding: 0;
   display: block;
-  margin-block-start: 45%;
+  margin-block-start: 20%;
 }
 
 li {
-  margin: 1%;
+  font-size: 25px;
+  margin: 2%;
   display: inline-block;
 }
 
 p {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .title {
+  font-size: 30px;
   margin: 0;
   padding: 0;
   height: 100%;
