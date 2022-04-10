@@ -17,11 +17,13 @@
       >Choose a Different Theme?</base-button
     >
   </div>
-  <game-board
-    v-if="gameStarted"
-    :selectedThemeData="selectedThemeData"
-    @game-start="gameStart"
-  ></game-board>
+  <transition>
+    <game-board
+      v-if="gameStarted"
+      :selectedThemeData="selectedThemeData"
+      @game-start="gameStart"
+    ></game-board>
+  </transition>
 </template>
 
 <script>
@@ -49,7 +51,12 @@ export default {
       this.selectedThemeData.push(this.cardThemes[themeId].data);
       this.gameStarted = !this.gameStarted;
       this.gameInstructions =
-        'Click the cards below, but be careful not to click the same card twice...';
+        'Click the cards below, but be careful not to click the same card twice. The cards will shuffle once you click them...';
+    },
+    checkHighScore() {
+      if (this.score > this.highestScore) {
+        this.highestScore = this.score;
+      }
     },
     shuffleCards() {
       this.selectedThemeData[0].sort(function () {
@@ -72,14 +79,9 @@ export default {
         this.shuffleCards();
       } else {
         this.gameInstructions =
-          'Winner, Winner, Chicken Dinner! Wanna try agian? Try a different theme...';
+          'Winner, Winner, Chicken Dinner! Wanna try again? Try a different theme...';
         this.highestScore = 10;
-        this.score = 0;
-      }
-    },
-    checkHighScore() {
-      if (this.score > this.highestScore) {
-        this.highestScore = this.score;
+        this.score = 10;
       }
     },
     resetGameBoard() {
@@ -105,5 +107,19 @@ body {
   align-items: center;
   margin: 8px;
   padding: 8px;
+}
+
+.v-enter-from {
+  opacity: 0;
+  transform: translateX(50px) translateY(40px);
+}
+
+.v-enter-active {
+  transition: all 0.6s ease-in-out;
+}
+
+.v-enter-to {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
 }
 </style>

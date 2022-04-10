@@ -32,7 +32,7 @@ header {
 nav {
   height: 100%;
   display: flex;
-  padding-left: 3%;
+  padding-left: 1%;
   justify-content: space-between;
   box-shadow: 0 5px 8px rgba(3, 44, 71, 0.588);
 }
@@ -51,7 +51,7 @@ ul {
 }
 
 li {
-  font-size: 25px;
+  font-size: 30px;
   margin: 2%;
   display: inline-block;
 }
@@ -72,7 +72,8 @@ p {
 
 .instructions {
   display: flex;
-
   align-items: center;
+  padding-left: 5px;
+  padding-right: 15px;
 }
 </style>

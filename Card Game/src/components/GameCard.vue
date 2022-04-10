@@ -15,4 +15,11 @@ div {
   background-color: rgb(6, 18, 11);
   box-shadow: 0 3px 8px rgba(17, 51, 72, 0.905);
 }
+
+div:hover,
+div:active {
+  background-color: #97058d;
+  border-color: #5c0556;
+  cursor: pointer;
+}
 </style>
